@@ -15,7 +15,7 @@ of the ways to contact me either via email, github, linkedin, or phone, and bein
 HTML code should be done by the end of Tuesday with the small chance of some CSS code dealing with color and font should be implemented.
 
 #### Wednesday: 
-Major CSS changes added to the repository which include nav-bar, links to project pages, links to social media/how to contact me, and some editing
+ CSS changes to the nav-bar, links to project pages, links to social media/how to contact me, and some editing
 on where things are centered such as the nav bar and certain areas of content being sectioned off.
 
 #### Thursday: 
