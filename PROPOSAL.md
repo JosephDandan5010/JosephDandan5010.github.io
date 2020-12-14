@@ -28,4 +28,4 @@ Provide a helpful READme about my project.
 - Joseph
 
 ## Github Repository
-https://github.com/JosephDandan5010/JosephDandan5010.github.io/new/main
+https://github.com/JosephDandan5010/JosephDandan5010.github.io/blob/main/PROPOSAL.md
