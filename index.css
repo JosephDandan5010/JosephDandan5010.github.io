@@ -33,6 +33,12 @@ html {
   }
 }
 
+@media (max-width: 61.25em) {
+    html {
+        font-size:58%;
+    }
+}
+
 @media (max-width: 28.75em) {
   html {
     font-size: 55%;
@@ -72,7 +78,7 @@ h3 {
 ul {
   list-style-type: outside;
   margin: 0.65em;
-  transform: translateX(50px);
+  transform: translateX(10px);
 }
 
 a {
@@ -87,8 +93,47 @@ img {
 
 /* nav */
 
+.nav-list {
+    list-style-type: none;
+    margin: 0.65em;
+    transform: translateX(10px);
+}
+
 .nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   background: var(--main-orange);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 2rem;
+}
+
+@media (max-width: 28.75em) {
+    .nav {
+        justify-content: center;
+    }
+}
+
+.nav-list {
+    margin: 0 1rem;
+}
+
+.nav-list a {
+    display: block;
+    font-size: 2.2rem;
+    padding: 2rem;
+}
+
+.nav-list a:hover {
+    background: var(--main-gray);
 }
 
 /* Welcome Section */
@@ -220,6 +265,7 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: left;
+    text-align: left;
     width: 100%;
     height: 100vh;
     background-color: #3a3d40;
@@ -236,7 +282,7 @@ img {
     width: 100%;
     height: 80vh;
     padding: 0 2rem;
-    background: var(--main-gray);
+    background: #3a3d40;
 }
 
 .contact-section-header > h3 {
