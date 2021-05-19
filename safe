@@ -59,37 +59,37 @@
 
         <section id="projects" class="projects-section">
           <h2 class="projects-section-header">My Projects</h2>
-          <div class="projects-grid">
+          <div class>
             <a
               href="https://github.com/Sbowles21/Joseph-Gregory-JS-UnitProject"
               target="_blank"
-              class="project project-tile"
             >
               <img class="project-image" src="/images/javascript.png" alt="project" />
               <h4>Random Mad Lib | Date: 10/9/20</h4>
               <p class="project-description">
                 <span class="code"></span>Whack-A-Bug | Date: 4/18/21
-                  Pair unit project that was a clone of whack a mole. The goal is to avoid hitting people and only bugs/wild cards. Also fun interactions were added in for each character
+                  Pair unit project that was a clone of whack a mole. The goal is to avoid hitting people and only bugs/wild cards.
+                  The only thing that was added to make the project unique from its original counter part was to add in fun interactions with
+                  each character/bug or other parts of the screen.
                 <span class="code"></span>
               </p>
             </a>
             <a
               href="https://github.com/BaseCampCoding/unit-project-2-joseph-and-seth"
               target="_blank"
-              class="project project-tile"
             >
               <img class="project-image" src="/images/foodlineimage.png" alt="project" />
               <h4>Food-Line App | Date: 11/13/20</h4>
               <p class="project-description">
                 <span class="code"></span>Food-Line App | Date: 11/13/20
                   Pair unit project based on a food app. Users can order food and make a reservation, order take out, or delivery. 
+                  The project was made with Python and used classes, databases, and input validation.
                 <span class="code"></span>
               </p>
             </a>
             <a
               href="https://github.com/BaseCampCoding/django-unit-project-joseph-dylan-greg"
               target="_blank"
-              class="project project-tile"
             >
               <img
                 class="project-image"
@@ -108,7 +108,6 @@
             <a
             href="https://shouganai.herokuapp.com/"
             target="_blank"
-            class="project project-tile"
           >
             <img class="project-image" src="/images/shoug.png" alt="project" />
             <h4>Shouganai | Date: 1/5/21</h4>
@@ -116,6 +115,7 @@
               <span class="code"></span>
                 A group side project with two other classmates creating a forum where 
                 communities can come together or post what they want. 
+                Shouganai was built with Django.
               <span class="code"></span>
             </p>
           </a>
@@ -175,3 +175,208 @@
     <!--END CONTACT ME SECTION-->
   </body>
 </html>
+
+/* Custom Color properties */
+
+:root {
+  --main-white: #f0f0f0;
+  --main-orange: #ffa500;
+  --main-gray: #303841;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: var(--main-white);
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
+  font-size: 400;
+  text-align: center;
+  line-height: 1.5;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 400;
+  text-align: center;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+ul {
+  list-style-type: outside;
+  margin: 0.65em;
+  transform: translateX(10px);
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-white);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/* nav */
+
+.nav-list {
+    list-style-type: none;
+    margin: 0.65em;
+    transform: translateX(10px);
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--main-orange);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  z-index: 10;
+  font-family: "Playfair Display", serif;
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 2rem;
+}
+
+@media (max-width: 28.75em) {
+    .nav {
+        justify-content: center;
+    }
+}
+
+.nav-list {
+    margin: 0 1rem;
+}
+
+.nav-list a {
+    display: block;
+    font-size: 2.2rem;
+    padding: 2rem;
+}
+
+.nav-list a:hover {
+    background: #CA9741;
+}
+
+/* Welcome Section */
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 100vh;
+  background-color: #3a3d40;
+}
+
+/* Projects Section */
+
+.projects-section {
+  text-align: center;
+  padding: 7rem 15rem;
+  background-color: #3a3d40;
+}
+
+.projects-section-header {
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+  font-size: 4rem;
+  font-family: "Playfair Display", serif;
+  /* border-bottom: 0.2rem solid var(--main-white) */
+}
+
+.code {
+    color: var(--main-white);
+    transition: color 0.3s ease-out;
+}
+
+.project-image {
+    height: calc(95% - 17rem);
+    width: 100%;
+    object-fit: auto;
+}
+
+/* About me Section */
+
+.about-me-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #3a3d40;
+}
+
+.about-me-section-header > h2{
+    padding-bottom: 5px;
+    font-size: 4rem;
+}
+
+.about-me-content {
+    padding-left: 150px;
+    padding-right: 150px;
+    display: inline;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    height: 35vh;
+}
+
+/* Contact section */
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+    background: #3a3d40;
+}
+
+.contact-section-header > h2 {
+    font-size: 4rem;
+    font: "Playfair Display", serif;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
+
+.contact-details {
+    font-size: 2.4rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+    font-size: 3.5rem;
+}
+
+.contact-details:hover {
+    transform: translateY(8px);
+}
